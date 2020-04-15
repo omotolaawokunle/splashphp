@@ -1,0 +1,48 @@
+{
+    "name": "splashphp/splashphp",
+    "description": "A Slim Framework skeleton application for rapid development",
+    "keywords": [
+        "microframework",
+        "splashphp"
+    ],
+    "homepage": "http://github.com/splashphp/splashphp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prince Darlington",
+            "email": "ekeminyd@gmail.com"
+        },
+        {
+            "name": "Obinna John",
+            "email": "johnsamuel254@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.23 || ^7.5",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "~1.0",
+        "splashphp/core": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "spl/",
+            "Splash\\": "src/Http/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit"
+    }
+}
